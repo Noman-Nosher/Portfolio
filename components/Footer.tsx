@@ -52,11 +52,11 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center space-x-2">
                 <FaEnvelope className="text-purple-400" />
-                <span className="text-gray-400">contact@nexvision.tech</span>
+                <span className="text-gray-400">nomannosher786@gmail.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <FaPhone className="text-purple-400" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+92 340 9499724</span>
               </li>
             </ul>
             <div className="flex space-x-4 mt-4">
