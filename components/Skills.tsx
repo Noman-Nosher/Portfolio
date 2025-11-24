@@ -1,6 +1,7 @@
 'use client'
 
-import { FaPython, FaRobot, FaMicrochip, FaTools } from 'react-icons/fa'
+import Link from 'next/link'
+import { FaPython, FaRobot, FaMicrochip, FaTools, FaArrowRight } from 'react-icons/fa'
 import { SiTensorflow, SiPytorch, SiOpencv, SiRos, SiArduino, SiCplusplus } from 'react-icons/si'
 
 export default function Skills() {
@@ -8,6 +9,7 @@ export default function Skills() {
     {
       title: 'Artificial Intelligence & Deep Learning',
       icon: <FaPython className="text-5xl text-purple-600" />,
+      link: '/computer-vision',
       skills: [
         'Deep Learning & Neural Networks',
         'TensorFlow & PyTorch',
@@ -25,6 +27,7 @@ export default function Skills() {
     {
       title: 'Computer Vision & Robotics',
       icon: <FaRobot className="text-5xl text-indigo-600" />,
+      link: '/computer-vision',
       skills: [
         'YOLO Object Detection',
         'Shoplifting Detection (3D CNN)',
@@ -42,6 +45,7 @@ export default function Skills() {
     {
       title: 'Embedded Systems & Motor Control',
       icon: <FaMicrochip className="text-5xl text-pink-600" />,
+      link: '/embedded-systems',
       skills: [
         'BLDC Motor Control (3 KW)',
         '6-Step Commutation',
@@ -59,6 +63,7 @@ export default function Skills() {
     {
       title: 'Construction & Project Management',
       icon: <FaTools className="text-5xl text-blue-600" />,
+      link: '/construction',
       skills: [
         'Quotation & Bid Management',
         'Quantity Estimation',
@@ -110,7 +115,7 @@ export default function Skills() {
               </ul>
 
               {/* Technologies */}
-              <div className="flex flex-wrap gap-3 pt-4 border-t border-gray-200">
+              <div className="flex flex-wrap gap-3 pt-4 border-t border-gray-200 mb-4">
                 {category.technologies.map((tech, idx) => (
                   <div
                     key={idx}
@@ -121,6 +126,15 @@ export default function Skills() {
                   </div>
                 ))}
               </div>
+
+              {/* Learn More Button */}
+              <Link
+                href={category.link}
+                className="flex items-center justify-center space-x-2 w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-4 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-medium"
+              >
+                <span>View Detailed Projects</span>
+                <FaArrowRight className="text-sm" />
+              </Link>
             </div>
           ))}
         </div>
