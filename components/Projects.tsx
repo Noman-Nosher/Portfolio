@@ -1,6 +1,7 @@
 'use client'
 
-import { FaShoppingCart, FaFaceSmile, FaCar, FaRobot, FaBolt, FaBuilding, FaChartLine } from 'react-icons/fa6'
+import { FaFaceSmile, FaCar, FaRobot, FaBolt, FaBuilding, FaChartLine } from 'react-icons/fa6'
+import { FaShoppingCart } from 'react-icons/fa'
 
 export default function Projects() {
   const projects = [

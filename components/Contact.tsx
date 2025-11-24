@@ -72,7 +72,7 @@ export default function Contact() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Let's <span className="gradient-text">Get Started</span>
+            Let&apos;s <span className="gradient-text">Get Started</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to transform your ideas into reality? Contact us today to discuss your project and schedule a consultation.
